@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_5",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:jukebox_playable": {
+          "song": "server_sided_portals:thesculk_record01",
+          "show_in_tooltip": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute as @a if predicate server_sided_portals:silence_predicate run data modify entity @s warden_spawn_tracker.warning_level set value 0

@@ -1,0 +1,18 @@
+{
+  "type": "server_sided_portals:the_sculk",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "server_sided_portals:the_sculk",
+    "biome_source": {
+      "type": "minecraft:checkerboard",
+      "scale": 4,
+      "biomes": [
+        "server_sided_portals:other_dark",
+        "server_sided_portals:other_biome",
+        "server_sided_portals:other_dark",
+        "server_sided_portals:other_biome",
+        "server_sided_portals:other_dark"
+      ]
+    }
+  }
+}

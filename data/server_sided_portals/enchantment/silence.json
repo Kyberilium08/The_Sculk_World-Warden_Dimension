@@ -1,0 +1,37 @@
+{
+  "description": "Silence",
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 5,
+  "slots": [],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "server_sided_portals:warden_override"
+        },
+        "requirements": {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:enchantment_level",
+            "amount": 1
+          },
+          "range": {
+            "min": 1,
+            "max": 255
+          }
+        }
+      }
+    ]
+  }
+}

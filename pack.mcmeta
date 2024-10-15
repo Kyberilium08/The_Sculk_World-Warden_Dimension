@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": {
+      "text": "Made by Kyberilium08 and GreatIdeaMedia team",
+      "color": "aqua",
+            "hoverEvent": {
+        "action": "show_text",
+        "contents": "Requires \"modifyplayerdata\" and \"server-sided-portals\" for Fabric 1.21"
+      }
+    }
+  }
+}

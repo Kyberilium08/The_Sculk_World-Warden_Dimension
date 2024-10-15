@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "armor.*": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "server_sided_portals:silence",
+              "levels": {
+                "min": 1,
+                "max": 255
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:polished_deepslate"
+    },
+    "title": "No sign of intelligent life",
+    "description": "Find the Ancient City.",
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "structures": "minecraft:ancient_city"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "a"
+    ]
+  ],
+  "rewards": {
+    "experience": 5
+  },
+  "sends_telemetry_event": false
+}

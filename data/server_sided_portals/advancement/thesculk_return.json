@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:recovery_compass"
+    },
+    "title": "To Sculk and Back",
+    "description": "Return from the Sculk World!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "server_sided_portals:thesculk_enter",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "server_sided_portals:the_sculk",
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "a"
+    ]
+  ],
+  "rewards": {
+    "experience": 40
+  },
+  "sends_telemetry_event": false
+}

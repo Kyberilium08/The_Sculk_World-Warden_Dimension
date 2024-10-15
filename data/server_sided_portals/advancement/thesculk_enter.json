@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk"
+    },
+    "title": "The ground there is alive",
+    "description": "Visit the Sculk Dimension.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "server_sided_portals:thesculk_prelude",
+  "criteria": {
+    "b": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "dimension": "server_sided_portals:the_sculk"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "b"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "server_sided_portals:thesculk_reward_record01"
+    ],
+    "experience": 5
+  },
+  "sends_telemetry_event": false
+}
